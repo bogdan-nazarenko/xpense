@@ -1,0 +1,256 @@
+@media screen and (max-width: 1023px) {
+  section.section--hero {
+    padding: 80px 0px;
+    height: unset;
+  }
+
+  .content.content--decor::before,
+  .content.content--decor::after {
+    display: none;
+  }
+
+  .content__suptitle {
+    font-size: 18px;
+  }
+
+  .content__title {
+    font-size: 56px;
+  }
+
+  .content__descr {
+    font-size: 18px;
+  }
+
+  .btn__base {
+    min-width: 150px;
+    font-size: 20px;
+  }
+
+  .content__demo .content__descr {
+    white-space: nowrap;
+  }
+
+  .content__cards {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .center__title {
+    font-size: 52px;
+  }
+
+  .item_w {
+    width: calc(100% / 2);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+  }
+
+  .footer__top {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px;
+  }
+
+  .footer__form {
+    margin: 0 auto;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn__head__menu {
+    display: block;
+    transform: rotate(0deg);
+  }
+
+  .navs {
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    padding-top: 68px;
+    background-color: var(--color-beige);
+    transform: translateX(-100dvw);
+  }
+
+  .mobile.mob--menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 100dvw;
+    z-index: 998;
+    background-color: var(--color-beige);
+  }
+
+  .btn__head__menu.rotate--open {
+    transform: rotate(180deg);
+    background-color: currentColor;
+  }
+
+  .navs.open--head {
+    overflow-y: auto;
+    transform: translateX(0);
+  }
+
+  .wrapper,
+  .btn__head__menu,
+  .navs,
+  .btn__head__menu.rotate--open,
+  .navs.open--head {
+    transition-duration: 0.3s;
+  }
+
+  .navigation {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .nav__item:not(:last-child) {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--color-lighter);
+    padding-bottom: 30px;
+  }
+
+  section:nth-of-type(-n + 4) .content {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+
+  .content__demo .content__descr {
+    white-space: wrap;
+  }
+
+  .btn__base {
+    height: 55px;
+    line-height: 100%;
+  }
+
+  section:nth-of-type(3) .content__image {
+    order: 1;
+  }
+
+  .content__info.content--row {
+    flex-direction: column;
+    align-items: unset;
+    row-gap: 30px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .card__arrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .item_w {
+    width: 100%;
+  }
+
+  .plan__card {
+    height: auto;
+  }
+
+  .price__subtitle {
+    font-size: 18px;
+  }
+
+  .btn__get {
+    min-width: 150px;
+    font-size: 24px;
+  }
+
+  .btn__arrow {
+    width: 32px;
+    height: 32px;
+    mask-size: 32px;
+  }
+
+  .shop__collage {
+    grid-template-areas:
+      "a a c c d d"
+      "a a f f g g"
+      "b b e e h h";
+  }
+
+  .form__areas {
+    margin-bottom: 15px;
+  }
+
+  input[type="checkbox"] {
+    min-width: 24px;
+    min-height: 24px;
+  }
+
+  input[type="submit"] {
+    width: 120px;
+    font-size: 24px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+
+  .footer__item {
+    text-align: center;
+  }
+
+  .email__form {
+    flex-direction: column;
+    border: unset;
+    border-radius: unset;
+    margin-bottom: 15px;
+    padding: unset;
+    max-width: 565px;
+    width: 100%;
+    height: 120px;
+  }
+
+  input[class="footer__email"] {
+    border: 1px solid var(--color-basic);
+    border-radius: 8px;
+    margin: unset;
+    padding: 10px;
+    height: 50px;
+  }
+
+  input[class="footer__submit"] {
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: unset;
+  }
+}

@@ -1,0 +1,141 @@
+.footer__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 107px 0 40px;
+  border-bottom: 1px solid rgba(189, 189, 189, 0.2);
+}
+
+.footer__links {
+  display: block;
+}
+
+.footer__title {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.ftr__link {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ftr__link:hover {
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+.ftr__link,
+.bott__link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.form__descr {
+  font-size: 20px;
+  color: var(--color-lighter);
+  margin-bottom: 18px;
+}
+
+.email__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+  width: 350px;
+  padding: 16px 0;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-basic);
+  border-radius: 8px;
+}
+
+input[class="footer__email"] {
+  width: 100%;
+  height: 30px;
+  margin: 0 22px;
+  padding: unset;
+  border: transparent;
+  border-radius: unset;
+}
+
+input[class="footer__email"]::placeholder {
+  color: var(--color-basic);
+}
+
+input[class="footer__submit"] {
+  margin: unset;
+  margin-right: 5px;
+}
+
+.form__sub {
+  font-size: 14px;
+  color: var(--color-lighter);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 114px;
+}
+
+.spn__links {
+  display: flex;
+  column-gap: 24px;
+}
+
+.bott__link,
+.cpr {
+  font-size: 14px;
+}
+
+.bott__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.bott__socials {
+  display: flex;
+  column-gap: 12px;
+}
+
+.social__link.fb,
+.social__link.twtt,
+.social__link.lnkd {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+  background-color: currentColor;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.social__link.fb:hover,
+.social__link.twtt:hover,
+.social__link.lnkd:hover {
+  cursor: pointer;
+  color: var(--color-accent);
+}
+
+.social__link.fb {
+  mask-image: url(../icons/facebook-square.svg);
+}
+.social__link.twtt {
+  mask-image: url(../icons/twitter-square.svg);
+}
+.social__link.lnkd {
+  mask-image: url(../icons/linkedin-square.svg);
+}
