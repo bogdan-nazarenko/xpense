@@ -22,6 +22,7 @@ btnMenu.addEventListener("click", function () {
 const btnPopupHead = document.querySelector(".btn__head");
 const btnPopupBase = document.querySelector(".btn__base");
 const popupDemo = document.querySelector(".popup_demo");
+const popupIn = document.querySelector(".popup__in");
 const btnPopupClose = document.querySelector(".popup__close");
 
 function ppWindow(btnOpen, pp) {
@@ -30,7 +31,7 @@ function ppWindow(btnOpen, pp) {
     document.body.style.overflowY = "hidden";
   });
 
-  btnPopupClose.addEventListener("click", function () {
+  function closeWindow() {
     if (navs.classList.contains("open--head")) {
       pp.classList.remove("active");
       return;
@@ -38,6 +39,12 @@ function ppWindow(btnOpen, pp) {
       pp.classList.remove("active");
       document.body.removeAttribute("style");
     }
+  }
+
+  pp.addEventListener("click", closeWindow);
+  btnPopupClose.addEventListener("click", closeWindow);
+  popupIn.addEventListener("click", (event) => {
+    event.stopPropagation();
   });
 }
 
