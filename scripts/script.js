@@ -1,3 +1,5 @@
+new WOW().init();
+
 const wrap = document.querySelector(".wrapper");
 const mobile = document.querySelector(".mobile");
 const btnMenu = document.querySelector(".btn__head__menu");
