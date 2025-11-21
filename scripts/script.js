@@ -32,11 +32,9 @@ function ppWindow(btnOpen, pp) {
   });
 
   function closeWindow() {
-    if (navs.classList.contains("open--head")) {
-      pp.classList.remove("active");
-      return;
-    } else if (!navs.classList.contains("open--head")) {
-      pp.classList.remove("active");
+    pp.classList.remove("active");
+
+    if (!navs.classList.contains("open--head")) {
       document.body.removeAttribute("style");
     }
   }
