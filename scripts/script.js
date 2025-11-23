@@ -1,3 +1,6 @@
+typeof WOW !== "undefined" && new WOW().init();
+typeof AOS !== "undefined" && AOS.init();
+
 const wrap = document.querySelector(".wrapper");
 const mobile = document.querySelector(".mobile");
 const btnMenu = document.querySelector(".btn__head__menu");
