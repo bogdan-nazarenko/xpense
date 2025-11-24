@@ -92,7 +92,7 @@
     transform: translateX(-100dvw);
   }
 
-  .mobile.mob--menu {
+  .mobile.open {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -101,22 +101,20 @@
     background-color: var(--color-beige);
   }
 
-  .btn__head__menu.rotate--open {
+  .btn__head__menu.open {
     transform: rotate(180deg);
     background-color: currentColor;
   }
 
-  .navs.open--head {
+  .navs.open {
     overflow-y: auto;
     transform: translateX(0);
   }
 
-  .mobile,
   .wrapper,
+  .mobile,
   .btn__head__menu,
-  .navs,
-  .btn__head__menu.rotate--open,
-  .navs.open--head {
+  .navs {
     transition-duration: 0.3s;
   }
 
