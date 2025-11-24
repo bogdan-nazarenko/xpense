@@ -67,13 +67,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  header .menu:has(.btn__head__menu.open) {
+  .menu:has(.btn__head__menu.open) {
     padding-top: 20px;
-  }
-
-  .btn__head__menu {
-    display: block;
-    transform: rotate(0deg);
   }
 
   .navs {
@@ -89,21 +84,9 @@
     transform: translateX(-100dvw);
   }
 
-  .btn__head__menu.open {
-    transform: rotate(180deg);
-    background-color: currentColor;
-  }
-
   .navs.open {
     overflow-y: auto;
     transform: translateX(0);
-  }
-
-  .wrapper,
-  header .menu,
-  .btn__head__menu,
-  .navs {
-    transition-duration: 0.3s;
   }
 
   .nav__list {
@@ -118,6 +101,23 @@
     text-align: center;
     border-bottom: 1px solid var(--color-lighter);
     padding-bottom: 30px;
+  }
+
+  .btn__head__menu {
+    display: block;
+    transform: rotate(0deg);
+  }
+
+  .btn__head__menu.open {
+    transform: rotate(180deg);
+    background-color: currentColor;
+  }
+
+  .wrapper,
+  .menu,
+  .navs,
+  .btn__head__menu {
+    transition-duration: 0.3s;
   }
 
   section:nth-of-type(-n + 4) .content {

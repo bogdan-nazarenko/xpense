@@ -30,19 +30,6 @@ header {
   object-fit: contain;
 }
 
-.btn__head__menu {
-  display: none;
-  width: 48px;
-  height: 48px;
-  z-index: 999;
-  background-color: var(--color-accent);
-  mask-image: url(../icons/menu-icon.svg);
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  cursor: pointer;
-}
-
 .navs {
   display: flex;
   align-items: center;
@@ -83,5 +70,18 @@ header {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
   color: var(--color-contrast);
+  cursor: pointer;
+}
+
+.btn__head__menu {
+  display: none;
+  width: 48px;
+  height: 48px;
+  z-index: 999;
+  background-color: var(--color-accent);
+  mask-image: url(../icons/menu-icon.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
   cursor: pointer;
 }
