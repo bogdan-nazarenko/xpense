@@ -7,17 +7,14 @@ const navs = document.querySelector(".navs");
 const openMod = "open";
 
 btnMenu.addEventListener("click", function () {
-  if (!btnMenu.classList.contains(openMod)) {
-    btnMenu.classList.add(openMod);
-    navs.classList.add(openMod);
-    document.body.style.overflowY = "hidden";
-    wrap.style.paddingTop = "unset";
-  } else if (btnMenu.classList.contains(openMod)) {
-    btnMenu.classList.remove(openMod);
-    navs.classList.remove(openMod);
-    document.body.removeAttribute("style");
-    wrap.removeAttribute("style");
-  }
+  const isOpen = btnMenu.classList.contains(openMod);
+
+  btnMenu.classList.toggle(openMod);
+  navs.classList.toggle(openMod);
+  document.body.style.overflowY = !isOpen
+    ? "hidden"
+    : document.body.removeAttribute("style");
+  wrap.style.paddingTop = !isOpen ? "initial" : wrap.removeAttribute("style");
 });
 
 const btnPopupHead = document.querySelector(".btn__head");
