@@ -67,13 +67,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
   .btn__head__menu {
     display: block;
     transform: rotate(0deg);
@@ -92,15 +85,6 @@
     transform: translateX(-100dvw);
   }
 
-  .mobile.open {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    width: 100dvw;
-    z-index: 998;
-    background-color: var(--color-beige);
-  }
-
   .btn__head__menu.open {
     transform: rotate(180deg);
     background-color: currentColor;
@@ -112,15 +96,9 @@
   }
 
   .wrapper,
-  .mobile,
   .btn__head__menu,
   .navs {
     transition-duration: 0.3s;
-  }
-
-  .navigation {
-    width: 80%;
-    padding-bottom: 20px;
   }
 
   .nav__list {
