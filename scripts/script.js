@@ -22,15 +22,16 @@ const btnPopupBase = document.querySelector(".btn__base");
 const popupDemo = document.querySelector(".popup_demo");
 const popupIn = document.querySelector(".popup__in");
 const btnPopupClose = document.querySelector(".popup__close");
+const active = "active";
 
 function ppWindow(btnOpen, pp) {
   btnOpen.addEventListener("click", function () {
-    pp.classList.add("active");
+    pp.classList.add(active);
     document.body.style.overflowY = "hidden";
   });
 
   function closeWindow() {
-    pp.classList.remove("active");
+    pp.classList.remove(active);
 
     if (!navs.classList.contains(openMod)) {
       document.body.removeAttribute("style");
