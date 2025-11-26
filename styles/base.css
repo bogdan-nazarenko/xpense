@@ -179,10 +179,6 @@ section.section--center {
 
 /* OVERVIEW */
 
-div.section--padd {
-  padding: 0;
-}
-
 .container__bg {
   display: flex;
   justify-content: center;
