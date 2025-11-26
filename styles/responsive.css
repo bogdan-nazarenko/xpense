@@ -189,7 +189,9 @@
     min-height: 24px;
   }
 
-  .block__btn__submit {}
+  .block__btn__submit {
+    height: 40px;
+  }
 
   .footer__top {
     flex-direction: column;
