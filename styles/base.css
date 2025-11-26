@@ -545,9 +545,7 @@ section.section--collage {
   gap: 12px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+.block__input {
   width: calc((100% - 12px) / 2);
   height: 50px;
   padding: 10px 8px;
@@ -604,7 +602,8 @@ input[type="checkbox"] {
   color: currentColor;
 }
 
-input[type="submit"] {
+.block__btn__submit,
+.footer__btn__submit {
   margin: 62px auto 0;
   min-width: 102px;
   height: 50px;
@@ -617,7 +616,8 @@ input[type="submit"] {
   font-weight: 600;
 }
 
-input[type="submit"]:hover {
+.block__btn__submit:hover,
+.footer__btn__submit:hover {
   border: 1px solid var(--color-accent);
   background-color: var(--color-contrast);
   color: var(--color-accent);

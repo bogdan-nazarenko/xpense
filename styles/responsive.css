@@ -194,7 +194,7 @@
     min-height: 24px;
   }
 
-  input[type="submit"] {
+  .block__btn__submit {
     width: 120px;
     font-size: 24px;
   }
@@ -223,7 +223,7 @@
     height: 120px;
   }
 
-  input[class="footer__email"] {
+  .footer__email {
     border: 1px solid var(--color-basic);
     border-radius: 8px;
     margin: unset;
@@ -231,7 +231,7 @@
     height: 50px;
   }
 
-  input[class="footer__submit"] {
+  .footer__btn__submit {
     width: 120px;
     height: 40px;
     font-size: 20px;

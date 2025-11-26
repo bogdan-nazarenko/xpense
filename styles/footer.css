@@ -61,20 +61,21 @@
   border-radius: 8px;
 }
 
-input[class="footer__email"] {
+.footer__email {
   width: 100%;
   height: 30px;
   margin: 0 22px;
   padding: unset;
   border: transparent;
   border-radius: unset;
+  font-size: 18px;
 }
 
-input[class="footer__email"]::placeholder {
+.footer__email::placeholder {
   color: var(--color-basic);
 }
 
-input[class="footer__submit"] {
+.footer__btn__submit {
   margin: unset;
   margin-right: 5px;
 }
