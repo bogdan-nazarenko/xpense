@@ -69,6 +69,7 @@ section.section--center {
 .content__title {
   font-weight: 700;
   font-size: 96px;
+  white-space: nowrap;
   margin-bottom: 20px;
 }
 

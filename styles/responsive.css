@@ -15,6 +15,7 @@
 
   .content__title {
     font-size: 56px;
+    white-space: initial;
   }
 
   .content__descr {
