@@ -167,11 +167,6 @@
     font-size: 18px;
   }
 
-  .btn__get {
-    max-width: 150px;
-    font-size: 24px;
-  }
-
   .btn__arrow {
     width: 32px;
     height: 32px;
@@ -194,10 +189,7 @@
     min-height: 24px;
   }
 
-  .block__btn__submit {
-    width: 120px;
-    font-size: 24px;
-  }
+  .block__btn__submit {}
 
   .footer__top {
     flex-direction: column;
@@ -232,9 +224,7 @@
   }
 
   .footer__btn__submit {
-    width: 120px;
     height: 40px;
-    font-size: 20px;
     margin-right: unset;
   }
 }
