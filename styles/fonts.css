@@ -2,12 +2,12 @@
   font-family: "Hind Siliguri";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/HindSiliguri-Regular.woff2) format(woff2);
+  src: url(../fonts/HindSiliguri-Regular.woff2);
 }
 
 @font-face {
   font-family: "Hind Siliguri";
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/HindSiliguri-Bold.woff2) format(woff2);
+  src: url(../fonts/HindSiliguri-Bold.woff2);
 }
