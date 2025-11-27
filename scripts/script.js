@@ -25,7 +25,7 @@ const btnPopupClose = document.querySelector(".popup__close");
 const active = "active";
 
 function ppWindow(btnOpen, pp) {
-  btnOpen.addEventListener("click", function () {
+  btnOpen.addEventListener("click", () => {
     pp.classList.add(active);
     document.body.style.overflowY = "hidden";
   });
