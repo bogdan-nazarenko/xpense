@@ -17,7 +17,7 @@ header {
 
 .logo {
   display: block;
-  width: 112px;
+  min-width: 112px;
   height: 40px;
   z-index: 999;
 }
