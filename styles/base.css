@@ -28,17 +28,11 @@ main {
 }
 
 section {
-  overflow: hidden;
-}
-
-section.section--height {
-  padding: 160px 0px;
-  height: calc(100dvh - 88px);
-}
-
-section.section--center {
   display: flex;
   align-items: center;
+  overflow: hidden;
+  height: calc(100dvh - 88px);
+  padding: 160px 0px;
 }
 
 .container {
@@ -320,6 +314,7 @@ section.section--center {
 /* FLEXIBLE PLANS */
 
 section.section--color-beige {
+  height: initial;
   padding: 140px 0px;
   background-color: var(--color-beige);
 }
@@ -446,6 +441,7 @@ section.section--color-beige {
 /* COLLAGE-GRID */
 
 section.section--collage {
+  height: initial;
   padding: 136px 0px;
 }
 
