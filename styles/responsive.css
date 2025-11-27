@@ -47,9 +47,7 @@
     width: calc(100% / 2);
   }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"] {
+  .block__input {
     width: 100%;
   }
 
