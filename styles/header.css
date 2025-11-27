@@ -48,9 +48,7 @@ header {
   font-size: 18px;
 }
 
-.nav__link:hover,
-.nav__link:active,
-.nav__link:focus {
+.nav__link:hover {
   color: var(--color-accent);
 }
 
