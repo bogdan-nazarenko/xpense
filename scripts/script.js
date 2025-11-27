@@ -47,3 +47,13 @@ function ppWindow(btnOpen, pp) {
 
 ppWindow(btnPopupHead, popupDemo);
 ppWindow(btnPopupBase, popupDemo);
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 768 && btnMenu.classList.contains(openMod)) {
+    btnMenu.classList.remove(openMod);
+    navs.classList.remove(openMod);
+    !popupDemo.classList.contains(active) &&
+      document.body.removeAttribute("style");
+    wrap.removeAttribute("style");
+  }
+});
