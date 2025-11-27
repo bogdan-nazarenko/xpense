@@ -65,9 +65,9 @@
   width: 100%;
   height: 30px;
   margin: 0 22px;
-  padding: unset;
+  padding: initial;
   border: transparent;
-  border-radius: unset;
+  border-radius: initial;
   font-size: 18px;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .footer__btn__submit {
-  margin: unset;
+  margin: initial;
   margin-right: 5px;
 }
 
