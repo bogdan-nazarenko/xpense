@@ -219,10 +219,6 @@ section {
   flex-wrap: wrap;
 }
 
-.company {
-  height: 100%;
-}
-
 /* CARDS */
 
 .content.content--column {
