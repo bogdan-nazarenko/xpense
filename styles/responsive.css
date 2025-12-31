@@ -124,6 +124,12 @@
     transition-duration: 0.3s;
   }
 
+  section,
+  section.section--color-beige,
+  section.section--collage {
+    padding: 40px 0px;
+  }
+
   section:nth-of-type(-n + 4) .content {
     flex-direction: column;
     align-items: flex-start;
@@ -143,10 +149,19 @@
     order: 1;
   }
 
+  .container__bg {
+    padding-top: 40px;
+  }
+
+  .brands {
+    padding: 40px 20px;
+  }
+
   .content__info.content--row {
     flex-direction: column;
     align-items: initial;
     row-gap: 30px;
+    margin-bottom: 40px;
   }
 
   .card {
@@ -156,6 +171,10 @@
   .card__arrow {
     width: 48px;
     height: 48px;
+  }
+
+  .center__title {
+    margin-bottom: 40px;
   }
 
   .item_w {
