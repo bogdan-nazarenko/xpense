@@ -6,6 +6,10 @@ header {
   background-color: var(--color-contrast);
 }
 
+header .logo {
+  z-index: 999;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -19,7 +23,6 @@ header {
   display: block;
   min-width: 112px;
   height: 40px;
-  z-index: 999;
 }
 
 .logo__img {
