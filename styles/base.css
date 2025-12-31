@@ -234,8 +234,9 @@ section {
 
 .content__cards {
   display: flex;
-  justify-content: center;
-  column-gap: calc(100% - (350px * 3));
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
 }
 
 .card {
