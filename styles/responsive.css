@@ -53,8 +53,7 @@
 
   .footer__top {
     flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 50px;
+    gap: 50px;
     padding-top: 40px;
   }
 
