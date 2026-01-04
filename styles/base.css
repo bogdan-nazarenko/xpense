@@ -242,10 +242,12 @@ section {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 65px;
   border-radius: 12px;
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  min-height: 350px;
+  width: 100%;
 }
 
 .card:hover {

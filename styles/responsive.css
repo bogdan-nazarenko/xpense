@@ -39,6 +39,10 @@
     flex-wrap: wrap;
   }
 
+  .card {
+    width: initial;
+  }
+
   .center__title {
     font-size: 52px;
   }
@@ -165,7 +169,8 @@
   }
 
   .card {
-    height: auto;
+    max-width: initial;
+    width: 100%;
   }
 
   .card__arrow {
