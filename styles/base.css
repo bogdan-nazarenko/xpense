@@ -105,6 +105,7 @@ section {
   background-color: var(--color-accent);
   color: var(--color-contrast);
   white-space: nowrap;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .btn__base:hover {
