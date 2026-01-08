@@ -79,22 +79,19 @@
   }
 
   .navs {
-    flex-direction: column;
-    justify-content: space-evenly;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100dvw;
     z-index: -1;
+    display: block;
     width: 100dvw;
     height: 100dvh;
     padding-top: 68px;
     background-color: var(--color-beige);
-    transform: translateX(-100dvw);
   }
 
   .navs.open {
-    overflow-y: auto;
-    transform: translateX(0);
+    left: 0;
   }
 
   .nav__list {
@@ -102,6 +99,7 @@
     align-items: center;
     row-gap: 30px;
     width: 80%;
+    margin: 30% auto 100px;
   }
 
   .nav__item:not(:last-child) {
@@ -109,6 +107,11 @@
     text-align: center;
     border-bottom: 1px solid var(--color-lighter);
     padding-bottom: 30px;
+  }
+
+  .btn__head {
+    display: block;
+    margin: 0 auto;
   }
 
   .btn__head__menu {
@@ -122,10 +125,16 @@
   }
 
   .wrapper,
-  .menu,
-  .navs,
+  .menu {
+    transition: padding-top 0.3s;
+  }
+
+  .navs {
+    transition: left 0.3s;
+  }
+
   .btn__head__menu {
-    transition-duration: 0.3s;
+    transition: transform 0.3s;
   }
 
   section,
