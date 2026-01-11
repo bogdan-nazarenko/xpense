@@ -91,6 +91,7 @@
     height: 100dvh;
     padding: 200px 0;
     background-color: var(--color-beige);
+    scrollbar-width: none;
   }
 
   .nav__head.open {
