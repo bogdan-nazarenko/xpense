@@ -3,14 +3,14 @@ typeof AOS !== "undefined" && AOS.init();
 
 const wrap = document.querySelector(".wrapper");
 const btnMenu = document.querySelector(".btn__head__menu");
-const navs = document.querySelector(".navs");
+const navHead = document.querySelector(".nav__head");
 const openMod = "open";
 
 btnMenu.addEventListener("click", function () {
   const isOpen = btnMenu.classList.contains(openMod);
 
   btnMenu.classList.toggle(openMod);
-  navs.classList.toggle(openMod);
+  navHead.classList.toggle(openMod);
   document.body.style.overflowY = !isOpen
     ? "hidden"
     : document.body.removeAttribute("style");
@@ -33,7 +33,7 @@ function ppWindow(btnOpen, pp) {
   function closeWindow() {
     pp.classList.remove(active);
 
-    if (!navs.classList.contains(openMod)) {
+    if (!navHead.classList.contains(openMod)) {
       document.body.removeAttribute("style");
     }
   }
@@ -51,7 +51,7 @@ ppWindow(btnPopupBase, popupDemo);
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && btnMenu.classList.contains(openMod)) {
     btnMenu.classList.remove(openMod);
-    navs.classList.remove(openMod);
+    navHead.classList.remove(openMod);
     !popupDemo.classList.contains(active) &&
       document.body.removeAttribute("style");
     wrap.removeAttribute("style");

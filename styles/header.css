@@ -29,7 +29,7 @@ header {
   object-fit: contain;
 }
 
-.navs {
+.nav__head {
   display: flex;
   align-items: center;
   width: 100%;
