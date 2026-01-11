@@ -81,20 +81,20 @@
   .navs {
     flex-direction: column;
     justify-content: space-evenly;
+    row-gap: 80px;
     position: fixed;
+    overflow: auto;
     top: 0;
-    left: 0;
+    left: -100dvw;
     z-index: -1;
     width: 100dvw;
     height: 100dvh;
-    padding-top: 68px;
+    padding: 200px 0;
     background-color: var(--color-beige);
-    transform: translateX(-100dvw);
   }
 
   .navs.open {
-    overflow-y: auto;
-    transform: translateX(0);
+    left: 0;
   }
 
   .nav__list {
@@ -122,10 +122,16 @@
   }
 
   .wrapper,
-  .menu,
-  .navs,
+  .menu {
+    transition: padding-top 0.3s;
+  }
+
+  .navs {
+    transition: left 0.3s;
+  }
+
   .btn__head__menu {
-    transition-duration: 0.3s;
+    transition: transform 0.3s;
   }
 
   section,
