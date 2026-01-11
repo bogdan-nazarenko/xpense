@@ -176,6 +176,10 @@ section {
 
 /* OVERVIEW */
 
+div:has(> .container__bg) {
+  overflow: hidden;
+}
+
 .container__bg {
   display: flex;
   justify-content: center;
