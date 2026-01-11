@@ -1,5 +1,5 @@
-typeof WOW !== "undefined" && new WOW().init();
 typeof AOS !== "undefined" && AOS.init();
+typeof WOW !== "undefined" && new WOW().init();
 
 const wrap = document.querySelector(".wrapper");
 const btnMenu = document.querySelector(".btn__head__menu");
