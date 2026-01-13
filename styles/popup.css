@@ -27,9 +27,6 @@
 }
 
 .popup__close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -41,6 +38,7 @@
 .popup__close::before,
 .popup__close::after {
   position: absolute;
+  translate: -50% -50%;
   content: "";
   width: 3px;
   height: 25px;
@@ -48,11 +46,11 @@
 }
 
 .popup__close::before {
-  transform: rotate(45deg);
+  rotate: 45deg;
 }
 
 .popup__close::after {
-  transform: rotate(-45deg);
+  rotate: -45deg;
 }
 
 .popup__close:hover::before,
