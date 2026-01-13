@@ -24,32 +24,29 @@ const popupIn = document.querySelector(".popup__in");
 const btnPopupClose = document.querySelector(".popup__close");
 const active = "active";
 
-function ppWindow(btnOpen, pp) {
-  btnOpen.addEventListener("click", () => {
-    pp.classList.add(active);
+function openWindow() {
+  popupDemo.classList.add(active);
 
-    if (!navHead.classList.contains(openMod)) {
-      document.body.style.overflowY = "hidden";
-    }
-  });
-
-  function closeWindow() {
-    pp.classList.remove(active);
-
-    if (!navHead.classList.contains(openMod)) {
-      document.body.removeAttribute("style");
-    }
+  if (!navHead.classList.contains(openMod)) {
+    document.body.style.overflowY = "hidden";
   }
-
-  pp.addEventListener("click", closeWindow);
-  btnPopupClose.addEventListener("click", closeWindow);
-  popupIn.addEventListener("click", (event) => {
-    event.stopPropagation();
-  });
 }
 
-ppWindow(btnPopupHead, popupDemo);
-ppWindow(btnPopupBase, popupDemo);
+function closeWindow() {
+  popupDemo.classList.remove(active);
+
+  if (!navHead.classList.contains(openMod)) {
+    document.body.removeAttribute("style");
+  }
+}
+
+btnPopupHead.addEventListener("click", openWindow);
+btnPopupBase.addEventListener("click", openWindow);
+popupDemo.addEventListener("click", closeWindow);
+btnPopupClose.addEventListener("click", closeWindow);
+popupIn.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
 
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && btnMenu.classList.contains(openMod)) {
