@@ -79,9 +79,6 @@
   }
 
   .nav__head {
-    flex-direction: column;
-    justify-content: space-evenly;
-    row-gap: 80px;
     position: fixed;
     overflow: auto;
     top: 0;
@@ -89,13 +86,21 @@
     z-index: -1;
     width: 100dvw;
     height: 100dvh;
-    padding: 200px 0;
     background-color: var(--color-beige);
     scrollbar-width: none;
   }
 
   .nav__head.open {
     left: 0;
+  }
+
+  .nav__content {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 80px;
+    min-height: 640px;
+    height: 100%;
+    padding-top: 68px;
   }
 
   .nav__list {

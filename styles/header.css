@@ -30,9 +30,12 @@ header {
 }
 
 .nav__head {
+  width: 100%;
+}
+
+.nav__content {
   display: flex;
   align-items: center;
-  width: 100%;
 }
 
 .nav__list {
