@@ -7,7 +7,7 @@ const navHead = document.querySelector(".nav__head");
 const openMod = "open";
 
 btnMenu.addEventListener("click", function () {
-  const isOpen = btnMenu.classList.contains(openMod);
+  const isOpen = navHead.classList.contains(openMod);
 
   btnMenu.classList.toggle(openMod);
   navHead.classList.toggle(openMod);
@@ -27,7 +27,10 @@ const active = "active";
 function ppWindow(btnOpen, pp) {
   btnOpen.addEventListener("click", () => {
     pp.classList.add(active);
-    document.body.style.overflowY = "hidden";
+
+    if (!navHead.classList.contains(openMod)) {
+      document.body.style.overflowY = "hidden";
+    }
   });
 
   function closeWindow() {
