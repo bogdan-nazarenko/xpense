@@ -43,9 +43,7 @@ btnPopupHead.addEventListener("click", openWindow);
 btnPopupBase.addEventListener("click", openWindow);
 popupDemo.addEventListener("click", closeWindow);
 btnPopupClose.addEventListener("click", closeWindow);
-popupIn.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
+popupIn.addEventListener("click", (event) => event.stopPropagation());
 
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && btnMenu.classList.contains(openMod)) {
