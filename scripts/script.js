@@ -22,10 +22,9 @@ const btnPopupBase = document.querySelector(".btn__base");
 const popupDemo = document.querySelector(".popup_demo");
 const popupIn = document.querySelector(".popup__in");
 const btnPopupClose = document.querySelector(".popup__close");
-const active = "active";
 
 function openWindow() {
-  popupDemo.classList.add(active);
+  popupDemo.classList.add(openMod);
 
   if (!navHead.classList.contains(openMod)) {
     document.body.style.overflowY = "hidden";
@@ -33,7 +32,7 @@ function openWindow() {
 }
 
 function closeWindow() {
-  popupDemo.classList.remove(active);
+  popupDemo.classList.remove(openMod);
 
   if (!navHead.classList.contains(openMod)) {
     document.body.removeAttribute("style");
@@ -52,7 +51,7 @@ window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && btnMenu.classList.contains(openMod)) {
     btnMenu.classList.remove(openMod);
     navHead.classList.remove(openMod);
-    !popupDemo.classList.contains(active) &&
+    !popupDemo.classList.contains(openMod) &&
       document.body.removeAttribute("style");
     wrap.removeAttribute("style");
   }
