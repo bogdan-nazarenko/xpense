@@ -82,10 +82,10 @@
     position: fixed;
     overflow: auto;
     top: 0;
-    left: -100dvw;
+    left: -100vw;
     z-index: -1;
-    width: 100dvw;
-    height: 100dvh;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--color-beige);
     scrollbar-width: none;
   }

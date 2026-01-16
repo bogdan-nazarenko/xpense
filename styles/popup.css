@@ -8,8 +8,8 @@
   top: 0;
   left: 0;
   padding: 0 20px;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(1, 1, 1, 0.4);
 }
 
