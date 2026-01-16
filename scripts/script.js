@@ -38,9 +38,9 @@ btnPopupClose.addEventListener("click", closeWindow);
 popupIn.addEventListener("click", (event) => event.stopPropagation());
 
 window.addEventListener("resize", function () {
-  if (window.innerWidth >= 768 && btnMenu.classList.contains(openMod)) {
-    btnMenu.classList.remove(openMod);
+  if (window.innerWidth >= 768 && navHead.classList.contains(openMod)) {
     navHead.classList.remove(openMod);
+    btnMenu.classList.remove(openMod);
     document.body.removeAttribute("style");
     wrap.removeAttribute("style");
   }
