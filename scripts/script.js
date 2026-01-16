@@ -25,18 +25,10 @@ const btnPopupClose = document.querySelector(".popup__close");
 
 function openWindow() {
   popupDemo.classList.add(openMod);
-
-  if (!navHead.classList.contains(openMod)) {
-    document.body.style.overflowY = "hidden";
-  }
 }
 
 function closeWindow() {
   popupDemo.classList.remove(openMod);
-
-  if (!navHead.classList.contains(openMod)) {
-    document.body.removeAttribute("style");
-  }
 }
 
 btnPopupHead.addEventListener("click", openWindow);
@@ -49,8 +41,7 @@ window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && btnMenu.classList.contains(openMod)) {
     btnMenu.classList.remove(openMod);
     navHead.classList.remove(openMod);
-    !popupDemo.classList.contains(openMod) &&
-      document.body.removeAttribute("style");
+    document.body.removeAttribute("style");
     wrap.removeAttribute("style");
   }
 });
