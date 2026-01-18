@@ -217,7 +217,7 @@ div:has(> .container__bg) {
   align-items: center;
   column-gap: 108px;
   row-gap: 30px;
-  background-color: white;
+  background-color: var(--color-contrast);
   width: 100%;
   padding: 82px 0 66px;
   flex-wrap: wrap;
