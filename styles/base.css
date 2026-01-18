@@ -358,12 +358,11 @@ section.section--color-beige {
   width: 24px;
   height: 24px;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 }
 
 .plan__card_title {
-  height: 52px;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
   font-weight: 600;
   font-size: 32px;
 }
