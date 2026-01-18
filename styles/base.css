@@ -400,7 +400,6 @@ section.section--color-beige {
 
 .price__subtitle {
   font-size: 12px;
-  font-weight: 400;
   color: var(--color-lighter);
   margin-bottom: 40px;
 }
