@@ -67,7 +67,9 @@
   margin: 0 22px;
   padding: initial;
   border-radius: initial;
+  font-family: inherit;
   font-size: 18px;
+  font-weight: inherit;
 }
 
 .footer__email::placeholder {

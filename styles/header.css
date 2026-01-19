@@ -62,9 +62,10 @@ header {
   color: var(--color-accent);
   text-align: center;
   line-height: 48px;
+  font-family: inherit;
   font-size: 18px;
+  font-weight: inherit;
   white-space: nowrap;
-  font-family: "Hind Siliguri", sans-serif;
 }
 
 .btn__head:hover {
