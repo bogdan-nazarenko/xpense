@@ -567,6 +567,11 @@ section.section--collage {
   font-weight: inherit;
 }
 
+.block__input::placeholder,
+#user__text::placeholder {
+  color: var(--color-lighter);
+}
+
 .indicate {
   display: flex;
   align-items: center;
