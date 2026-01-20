@@ -124,7 +124,7 @@
 
   .btn__head__menu.open {
     transform: rotate(180deg);
-    background-color: currentColor;
+    background-color: var(--color-basic);
   }
 
   .wrapper,
