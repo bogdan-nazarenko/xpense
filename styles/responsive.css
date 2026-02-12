@@ -2,8 +2,8 @@
   section,
   section.section--color-beige,
   section.section--collage {
-    height: initial;
     padding: 80px 0px;
+    height: initial;
   }
 
   .content.content--decor::before,
@@ -35,8 +35,8 @@
   }
 
   .content__cards {
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card {
@@ -66,9 +66,9 @@
   }
 
   .footer__bottom {
+    row-gap: 30px;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
     padding-bottom: 40px;
   }
 }
@@ -80,13 +80,13 @@
 
   .nav__head {
     position: fixed;
-    overflow: auto;
     top: 0;
     left: -100vw;
     z-index: -1;
+    background-color: var(--color-beige);
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-beige);
+    overflow: auto;
     scrollbar-width: none;
   }
 
@@ -95,26 +95,26 @@
   }
 
   .nav__content {
+    row-gap: 80px;
     flex-direction: column;
     justify-content: center;
-    row-gap: 80px;
-    min-height: 640px;
-    height: 100%;
     padding-top: 68px;
+    height: 100%;
+    min-height: 640px;
   }
 
   .nav__list {
+    row-gap: 30px;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
     width: 80%;
   }
 
   .nav__item:not(:last-child) {
-    width: 100%;
-    text-align: center;
     border-bottom: 1px solid var(--color-lighter);
     padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
   }
 
   .btn__head__menu {
@@ -147,9 +147,9 @@
   }
 
   section:nth-of-type(-n + 4) .content {
+    row-gap: 30px;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 30px;
   }
 
   .content__demo .content__descr {
@@ -174,15 +174,15 @@
   }
 
   .content__info.content--row {
+    row-gap: 30px;
     flex-direction: column;
     align-items: initial;
-    row-gap: 30px;
     margin-bottom: 40px;
   }
 
   .card {
-    max-width: initial;
     width: 100%;
+    max-width: initial;
   }
 
   .card__arrow {
@@ -207,9 +207,9 @@
   }
 
   .btn__arrow {
+    mask-size: 32px;
     width: 32px;
     height: 32px;
-    mask-size: 32px;
   }
 
   .shop__collage {
@@ -248,25 +248,25 @@
 
   .email__form {
     flex-direction: column;
+    margin-bottom: 15px;
     border: initial;
     border-radius: initial;
-    margin-bottom: 15px;
     padding: initial;
-    max-width: 565px;
     width: 100%;
+    max-width: 565px;
     height: 120px;
   }
 
   .footer__email {
+    margin: initial;
     border: 1px solid var(--color-basic);
     border-radius: 8px;
-    margin: initial;
     padding: 10px;
     height: 50px;
   }
 
   .footer__btn__submit {
-    height: 40px;
     margin-right: initial;
+    height: 40px;
   }
 }
