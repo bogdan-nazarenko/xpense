@@ -158,7 +158,6 @@
 
   .btn__base {
     height: 55px;
-    line-height: 100%;
   }
 
   section:nth-of-type(3) .content__image {
@@ -230,6 +229,10 @@
 
   .block__btn__submit {
     margin-top: 32px;
+  }
+
+  .block__btn__submit,
+  .footer__btn__submit {
     height: 40px;
   }
 
@@ -261,12 +264,11 @@
     margin: initial;
     border: 1px solid var(--color-basic);
     border-radius: 8px;
-    padding: 10px;
+    padding: 0 10px;
     height: 50px;
   }
 
   .footer__btn__submit {
     margin-right: initial;
-    height: 40px;
   }
 }
