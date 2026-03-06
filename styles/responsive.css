@@ -51,7 +51,7 @@
     width: calc(100% / 2);
   }
 
-  .block__input {
+  .form__input {
     width: 100%;
   }
 
@@ -218,7 +218,7 @@
       "b b e e h h";
   }
 
-  .form__areas {
+  .form__content {
     margin-bottom: 15px;
   }
 
@@ -227,11 +227,11 @@
     min-height: 20px;
   }
 
-  .block__btn__submit {
+  .form__btn__submit {
     margin-top: 32px;
   }
 
-  .block__btn__submit,
+  .form__btn__submit,
   .footer__btn__submit {
     height: 40px;
   }

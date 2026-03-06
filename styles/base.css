@@ -505,39 +505,29 @@ section.section--collage {
   object-position: center;
 }
 
-/* FORMS */
-
-.content__forms {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.form__block {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 592px;
-}
+/* FORM */
 
 .form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 592px;
 }
 
-.form__areas {
+.form__content {
   display: flex;
   row-gap: 12px;
   flex-direction: column;
   margin-bottom: 5px;
 }
 
-.areas {
+.form__group {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.block__input {
+.form__input {
   border: 1px solid var(--color-basic);
   border-radius: 4px;
   background-color: var(--color-contrast);
@@ -561,7 +551,7 @@ section.section--collage {
   font-family: inherit;
 }
 
-.block__input::placeholder,
+.form__input::placeholder,
 #user__text::placeholder {
   color: var(--color-lighter);
 }
@@ -595,7 +585,7 @@ input[type="checkbox"] {
   color: currentColor;
 }
 
-.block__btn__submit,
+.form__btn__submit,
 .footer__btn__submit {
   margin: 62px auto 0;
   border: 1px solid var(--color-accent);
@@ -609,7 +599,7 @@ input[type="checkbox"] {
   font-family: inherit;
 }
 
-.block__btn__submit:hover,
+.form__btn__submit:hover,
 .footer__btn__submit:hover {
   cursor: pointer;
   border: 1px solid var(--color-accent);
