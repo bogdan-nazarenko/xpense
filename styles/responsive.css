@@ -15,10 +15,8 @@
     font-size: 18px;
   }
 
-  .content__title,
-  .content__title.title--nowrap {
+  .content__title {
     font-size: 56px;
-    white-space: initial;
   }
 
   .content__descr {
