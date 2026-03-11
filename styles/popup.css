@@ -10,7 +10,6 @@
   padding: 0 20px;
   width: 100vw;
   height: 100vh;
-  overflow-y: auto;
 }
 
 .popup_demo.open {
