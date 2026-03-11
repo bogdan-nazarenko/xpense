@@ -87,6 +87,8 @@ section {
 .content__demo {
   display: flex;
   column-gap: 18px;
+  row-gap: 12px;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -94,14 +96,11 @@ section {
   border: 1px solid;
   border-radius: 8px;
   background-color: var(--color-accent);
-  min-width: 192px;
-  height: 75px;
+  padding: 17px 23.5px;
   color: var(--color-contrast);
   font-weight: inherit;
   font-size: inherit;
   font-family: inherit;
-  text-align: center;
-  white-space: nowrap;
 }
 
 .btn__base:hover {
@@ -401,23 +400,19 @@ section.section--color-beige {
 }
 
 .btn__get {
-  display: flex;
+  display: inline-flex;
   column-gap: 10px;
-  justify-content: center;
   align-items: center;
+  cursor: pointer;
   border: 1px solid;
   border-radius: 8px;
-  max-width: 136px;
-  height: 50px;
+  padding: 12px 23.3px;
   color: var(--color-accent);
   font-size: 16px;
-  text-align: center;
   text-decoration: none;
-  white-space: nowrap;
 }
 
 .btn__arrow {
-  display: block;
   mask-image: url(../icons/card-arrow.svg);
   mask-position: center;
   mask-size: 24px;
@@ -425,11 +420,9 @@ section.section--color-beige {
   background-color: currentColor;
   width: 24px;
   height: 24px;
-  color: currentColor;
 }
 
 .btn__get:hover {
-  cursor: pointer;
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
   color: var(--color-contrast);
@@ -585,14 +578,17 @@ input[type="checkbox"] {
   color: currentColor;
 }
 
+.form__btn__submit {
+  margin: 62px auto 0;
+  padding: 11px 24.75px;
+}
+
 .form__btn__submit,
 .footer__btn__submit {
-  margin: 62px auto 0;
+  cursor: pointer;
   border: 1px solid var(--color-accent);
   border-radius: 8px;
   background-color: var(--color-accent);
-  min-width: 102px;
-  height: 50px;
   color: var(--color-contrast);
   font-weight: 600;
   font-size: 16px;
@@ -601,7 +597,6 @@ input[type="checkbox"] {
 
 .form__btn__submit:hover,
 .footer__btn__submit:hover {
-  cursor: pointer;
   border: 1px solid var(--color-accent);
   background-color: var(--color-contrast);
   color: var(--color-accent);

@@ -74,8 +74,8 @@
 }
 
 .footer__btn__submit {
-  margin: initial;
   margin-right: 5px;
+  padding: 10px 15.5px;
 }
 
 .form__sub {

@@ -26,7 +26,7 @@
   }
 
   .btn__base {
-    min-width: 150px;
+    padding: 12px;
     font-size: 20px;
   }
 
@@ -156,10 +156,6 @@
     white-space: wrap;
   }
 
-  .btn__base {
-    height: 55px;
-  }
-
   section:nth-of-type(3) .content__image {
     order: 1;
   }
@@ -205,12 +201,6 @@
     font-size: 18px;
   }
 
-  .btn__arrow {
-    mask-size: 32px;
-    width: 32px;
-    height: 32px;
-  }
-
   .shop__collage {
     grid-template-areas:
       "a a c c d d"
@@ -228,12 +218,12 @@
   }
 
   .form__btn__submit {
-    margin-top: 32px;
+    margin: 32px auto 0;
   }
 
   .form__btn__submit,
   .footer__btn__submit {
-    height: 40px;
+    padding: 8px 24px;
   }
 
   .footer__top {
