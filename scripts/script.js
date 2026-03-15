@@ -20,22 +20,14 @@ btnMenu.addEventListener("click", function () {
 const btnPopupHead = document.querySelector(".btn__head");
 const btnPopupBase = document.querySelector(".btn__base");
 const popupDemo = document.querySelector(".popup_demo");
-const popupIn = document.querySelector(".popup__in");
-const btnPopupClose = document.querySelector(".popup__close");
+const popupContainer = document.querySelector(".popup__container");
+const popupCloseButton = document.querySelector(".popup__close__button");
 
-function openWindow() {
-  popupDemo.classList.add(openMod);
-}
-
-function closeWindow() {
-  popupDemo.classList.remove(openMod);
-}
-
-btnPopupHead.addEventListener("click", openWindow);
-btnPopupBase.addEventListener("click", openWindow);
-popupDemo.addEventListener("click", closeWindow);
-btnPopupClose.addEventListener("click", closeWindow);
-popupIn.addEventListener("click", (event) => event.stopPropagation());
+btnPopupHead.addEventListener("click", () => popupDemo.show());
+btnPopupBase.addEventListener("click", () => popupDemo.show());
+popupDemo.addEventListener("click", () => popupDemo.close());
+popupContainer.addEventListener("click", (event) => event.stopPropagation());
+popupCloseButton.addEventListener("click", () => popupDemo.close());
 
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && navHead.classList.contains(openMod)) {

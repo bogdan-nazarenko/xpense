@@ -12,11 +12,11 @@
   height: 100vh;
 }
 
-.popup_demo.open {
+.popup_demo[open] {
   display: flex;
 }
 
-.popup__in {
+.popup__container {
   border-radius: 8px;
   background-color: var(--color-contrast);
   padding: 20px;
@@ -24,25 +24,25 @@
   min-height: 200px;
 }
 
-.popup__sup {
+.popup__top__panel {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.pp__title {
+.popup__title {
   font-weight: 600;
 }
 
-.popup__close {
+.popup__close__button {
   position: relative;
   cursor: pointer;
   width: 24px;
   height: 24px;
 }
 
-.popup__close::before,
-.popup__close::after {
+.popup__close__button::before,
+.popup__close__button::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,20 +52,20 @@
   content: "";
 }
 
-.popup__close::before {
+.popup__close__button::before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.popup__close::after {
+.popup__close__button::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.popup__close:hover::before,
-.popup__close:hover::after {
+.popup__close__button:hover::before,
+.popup__close__button:hover::after {
   background-color: var(--color-lighter);
 }
 
-.pp__text {
+.popup__text {
   line-height: normal;
   text-align: justify;
   white-space: wrap;
