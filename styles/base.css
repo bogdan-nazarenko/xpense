@@ -583,7 +583,7 @@ input[type="checkbox"] {
 }
 
 .form__btn__submit,
-.footer__btn__submit {
+.footer__submit__button {
   cursor: pointer;
   border: 1px solid var(--color-accent);
   border-radius: 8px;
@@ -595,7 +595,7 @@ input[type="checkbox"] {
 }
 
 .form__btn__submit:hover,
-.footer__btn__submit:hover {
+.footer__submit__button:hover {
   border: 1px solid var(--color-accent);
   background-color: var(--color-contrast);
   color: var(--color-accent);
