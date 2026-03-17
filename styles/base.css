@@ -92,7 +92,7 @@ section {
   align-items: center;
 }
 
-.btn__base {
+.demo__button {
   border: 1px solid;
   border-radius: 8px;
   background-color: var(--color-accent);
@@ -103,7 +103,7 @@ section {
   font-family: inherit;
 }
 
-.btn__base:hover {
+.demo__button:hover {
   cursor: pointer;
   border: 1px solid;
   background-color: transparent;
