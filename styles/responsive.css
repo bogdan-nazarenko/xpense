@@ -72,11 +72,15 @@
 }
 
 @media (max-width: 767px) {
-  .menu:has(.btn__head__menu.open) {
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__container:has(.header__menu__button.active) {
     padding-top: 20px;
   }
 
-  .nav__head {
+  .header__nav {
     position: fixed;
     top: 0;
     left: -100vw;
@@ -88,11 +92,11 @@
     scrollbar-width: none;
   }
 
-  .nav__head.open {
+  .header__nav.open {
     left: 0;
   }
 
-  .nav__content {
+  .header__nav__content {
     row-gap: 80px;
     flex-direction: column;
     justify-content: center;
@@ -101,40 +105,40 @@
     min-height: 640px;
   }
 
-  .nav__list {
+  .header__nav__list {
     row-gap: 30px;
     flex-direction: column;
     align-items: center;
     width: 80%;
   }
 
-  .nav__item:not(:last-child) {
+  .header__nav__item:not(:last-child) {
     border-bottom: 1px solid var(--color-lighter);
     padding-bottom: 30px;
     width: 100%;
     text-align: center;
   }
 
-  .btn__head__menu {
+  .header__menu__button {
     display: block;
     transform: rotate(0deg);
   }
 
-  .btn__head__menu.open {
+  .header__menu__button.active {
     transform: rotate(180deg);
     background-color: var(--color-basic);
   }
 
   .wrapper,
-  .menu {
+  .header__container {
     transition: padding-top 0.3s;
   }
 
-  .nav__head {
+  .header__nav {
     transition: left 0.3s;
   }
 
-  .btn__head__menu {
+  .header__menu__button {
     transition: transform 0.3s;
   }
 
