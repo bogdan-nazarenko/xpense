@@ -3,7 +3,6 @@ header {
   top: 0;
   z-index: 1000;
   background-color: var(--color-contrast);
-  width: 100%;
 }
 
 .header__container {

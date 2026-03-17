@@ -121,7 +121,6 @@
 
   .header__menu__button {
     display: block;
-    transform: rotate(0deg);
   }
 
   .header__menu__button.active {
