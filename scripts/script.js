@@ -1,39 +1,43 @@
 typeof AOS !== "undefined" && AOS.init();
 typeof WOW !== "undefined" && new WOW().init();
 
-const wrap = document.querySelector(".wrapper");
-const btnMenu = document.querySelector(".btn__head__menu");
-const navHead = document.querySelector(".nav__head");
-const openMod = "open";
+const ACTIVE = "active";
+const OPEN = "open";
 
-btnMenu.addEventListener("click", function () {
-  const isOpen = navHead.classList.contains(openMod);
+const wrapper = document.querySelector(".wrapper");
+const headerNav = document.querySelector(".header__nav");
+const headerMenuButton = document.querySelector(".header__menu__button");
 
-  btnMenu.classList.toggle(openMod);
-  navHead.classList.toggle(openMod);
+headerMenuButton.addEventListener("click", function () {
+  const isOpen = headerNav.classList.contains(OPEN);
+
   document.body.style.overflowY = !isOpen
     ? "hidden"
     : document.body.removeAttribute("style");
-  wrap.style.paddingTop = !isOpen ? "initial" : wrap.removeAttribute("style");
+  wrapper.style.paddingTop = !isOpen
+    ? "initial"
+    : wrapper.removeAttribute("style");
+  headerNav.classList.toggle(OPEN);
+  headerMenuButton.classList.toggle(ACTIVE);
 });
 
-const btnPopupHead = document.querySelector(".btn__head");
-const btnPopupBase = document.querySelector(".btn__base");
+const headerNavButton = document.querySelector(".header__nav__button");
+const demoButton = document.querySelector(".demo__button");
 const popupDemo = document.querySelector(".popup_demo");
 const popupContainer = document.querySelector(".popup__container");
 const popupCloseButton = document.querySelector(".popup__close__button");
 
-btnPopupHead.addEventListener("click", () => popupDemo.show());
-btnPopupBase.addEventListener("click", () => popupDemo.show());
+headerNavButton.addEventListener("click", () => popupDemo.show());
+demoButton.addEventListener("click", () => popupDemo.show());
 popupDemo.addEventListener("click", () => popupDemo.close());
 popupContainer.addEventListener("click", (event) => event.stopPropagation());
 popupCloseButton.addEventListener("click", () => popupDemo.close());
 
 window.addEventListener("resize", function () {
-  if (window.innerWidth >= 768 && navHead.classList.contains(openMod)) {
-    navHead.classList.remove(openMod);
-    btnMenu.classList.remove(openMod);
+  if (window.innerWidth >= 768 && headerNav.classList.contains(OPEN)) {
     document.body.removeAttribute("style");
-    wrap.removeAttribute("style");
+    wrapper.removeAttribute("style");
+    headerNav.classList.remove(OPEN);
+    headerMenuButton.classList.remove(OPEN);
   }
 });
