@@ -1,0 +1,112 @@
+.product__info {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  margin-bottom: 80px;
+}
+
+.product__title,
+.product__text {
+  margin: initial;
+}
+
+.product__item-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 29px;
+  width: 100%;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 64px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.product__item:hover {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.04);
+}
+
+.product__item-icon {
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+.product__item:nth-child(1) .product__item-icon {
+  background-image: url(../media/icons/device.svg);
+  background-color: #ffbd740d;
+}
+
+.product__item:nth-child(2) .product__item-icon {
+  background-image: url(../media/icons/cloud.svg);
+  background-color: #e2598b0d;
+}
+
+.product__item:nth-child(3) .product__item-icon {
+  background-image: url(../media/icons/backpack.svg);
+  background-color: #4d12ee0d;
+}
+
+.product__item-title {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+
+.product__item-description {
+  margin-bottom: 26px;
+  color: var(--light-color1);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.product__item-link {
+  display: block;
+  mask-image: url(../media/icons/arrow-2.svg);
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: currentColor;
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+.product__item-link:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 1023px) {
+  .product__info {
+    gap: 30px;
+  }
+
+  .product__item {
+    width: initial;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__info {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .product__item {
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+  }
+}

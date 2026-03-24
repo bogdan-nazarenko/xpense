@@ -1,7 +1,6 @@
-.popup_demo {
+.popup {
   position: fixed;
   top: 0;
-  left: 0;
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -12,19 +11,18 @@
   color: inherit;
 }
 
-.popup_demo[open] {
+.popup[open] {
   display: flex;
 }
 
 .popup__container {
   border-radius: 8px;
-  background-color: var(--color-contrast);
+  background-color: var(--light-color2);
   padding: 20px;
   max-width: 500px;
-  min-height: 200px;
 }
 
-.popup__top__panel {
+.popup__top-panel {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -34,39 +32,36 @@
   font-weight: 600;
 }
 
-.popup__close__button {
+.popup__close-button {
   position: relative;
   cursor: pointer;
   width: 24px;
   height: 24px;
 }
 
-.popup__close__button::before,
-.popup__close__button::after {
+.popup__close-button::before,
+.popup__close-button::after {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: var(--color-accent);
+  background-color: var(--main-color);
   width: 3px;
   height: 24px;
   content: "";
 }
 
-.popup__close__button::before {
+.popup__close-button::before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.popup__close__button::after {
+.popup__close-button::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.popup__close__button:hover::before,
-.popup__close__button:hover::after {
-  background-color: var(--color-lighter);
+.popup__close-button:hover::before,
+.popup__close-button:hover::after {
+  background-color: var(--light-color1);
 }
 
 .popup__text {
   line-height: normal;
   text-align: justify;
-  white-space: wrap;
 }

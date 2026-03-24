@@ -6,7 +6,7 @@ const OPEN = "open";
 
 const wrapper = document.querySelector(".wrapper");
 const headerNav = document.querySelector(".header__nav");
-const headerMenuButton = document.querySelector(".header__menu__button");
+const headerMenuButton = document.querySelector(".header__menu-button");
 
 headerMenuButton.addEventListener("click", function () {
   const isOpen = headerNav.classList.contains(OPEN);
@@ -21,17 +21,17 @@ headerMenuButton.addEventListener("click", function () {
   headerMenuButton.classList.toggle(ACTIVE);
 });
 
-const headerNavButton = document.querySelector(".header__nav__button");
-const demoButton = document.querySelector(".demo__button");
-const popupDemo = document.querySelector(".popup_demo");
+const headerNavButton = document.querySelector(".header__nav-button");
+const heroButton = document.querySelector(".hero__button");
+const popup = document.querySelector(".popup");
 const popupContainer = document.querySelector(".popup__container");
-const popupCloseButton = document.querySelector(".popup__close__button");
+const popupCloseButton = document.querySelector(".popup__close-button");
 
-headerNavButton.addEventListener("click", () => popupDemo.show());
-demoButton.addEventListener("click", () => popupDemo.show());
-popupDemo.addEventListener("click", () => popupDemo.close());
+headerNavButton.addEventListener("click", () => popup.show());
+heroButton.addEventListener("click", () => popup.show());
+popup.addEventListener("click", () => popup.close());
 popupContainer.addEventListener("click", (event) => event.stopPropagation());
-popupCloseButton.addEventListener("click", () => popupDemo.close());
+popupCloseButton.addEventListener("click", () => popup.close());
 
 window.addEventListener("resize", function () {
   if (window.innerWidth >= 768 && headerNav.classList.contains(OPEN)) {

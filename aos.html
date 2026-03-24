@@ -4,634 +4,580 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xpense AOS</title>
-    <link rel="icon" type="image/x-icon" href="./icons/x-icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="./libs/aos/aos.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <div class="header__container container">
-          <a href="#" class="xpense__link"
-            ><img src="./images/logo.svg" alt="Xpense" class="xpense__logo"
-          /></a>
+        <div class="container header__container">
+          <a class="xpense-link" href="#">
+            <img
+              class="xpense-logo"
+              src="./media/images/logo.svg"
+              alt="Xpense"
+            />
+          </a>
           <nav class="header__nav">
-            <div class="header__nav__content">
-              <ul class="header__nav__list">
-                <li class="header__nav__item">
+            <div class="header__nav-container">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
                   <a class="header__link" href="#">Features</a>
                 </li>
-                <li class="header__nav__item">
+                <li class="header__nav-item">
                   <a class="header__link" href="#">About us</a>
                 </li>
-                <li class="header__nav__item">
+                <li class="header__nav-item">
                   <a class="header__link" href="#">Pricing</a>
                 </li>
-                <li class="header__nav__item">
+                <li class="header__nav-item">
                   <a class="header__link" href="#">Feedback</a>
                 </li>
               </ul>
-              <button class="header__nav__button">Request a demo</button>
+              <button class="header__nav-button">Request a demo</button>
             </div>
           </nav>
-          <button class="header__menu__button"></button>
+          <button class="header__menu-button"></button>
         </div>
       </header>
       <main>
-        <section>
-          <div class="container">
-            <div class="content content--decor">
-              <div class="content__info">
-                <h1 class="content__title title--nowrap">
-                  Track your<br />Expenses &<br />Save Money
-                </h1>
-                <div class="content__descr">
-                  Helps you to organize your income and expenses
-                </div>
-                <div class="content__demo">
-                  <button class="demo__button">Try free demo</button>
-                  <div class="content__descr descr--not-marg">
-                    — Web, iOS and Android
-                  </div>
-                </div>
+        <section class="hero section--calc-height">
+          <div class="container hero__container container--flex">
+            <div class="block__info">
+              <h1 class="block__title block__title--v1 hero__title">
+                Track your<br />Expenses &<br />Save Money
+              </h1>
+              <p class="block__text hero__text">
+                Helps you to organize your income and expenses
+              </p>
+              <div class="hero__info-container">
+                <button class="hero__button">Try free demo</button>
+                <p class="block__text hero__description">
+                  — Web, iOS and Android
+                </p>
               </div>
-              <div class="content__image">
-                <img src="./images/image-1.svg" alt="" class="pic" />
-              </div>
+            </div>
+            <div class="block__image-wrapper">
+              <img class="block__image" src="./media/images/img-1.svg" alt="" />
             </div>
           </div>
         </section>
-        <div>
+        <div class="overview">
           <div
-            class="container__bg"
+            class="overview__container"
             data-aos="flip-right"
             data-aos-duration="500"
             data-aos-delay="350"
             data-aos-offset="400"
           >
-            <div class="block">
-              <div class="block__image">
-                <img
-                  loading="lazy"
-                  src="./images/overview.png"
-                  alt=""
-                  class="overview"
-                />
-              </div>
-            </div>
-            <div class="brands">
+            <div class="overview__image-wrapper">
               <img
                 loading="lazy"
-                src="./images/brands/facebook.png"
+                class="overview__image"
+                src="./media/images/overview.png"
+                alt=""
+              />
+            </div>
+            <div class="overview__brands">
+              <img
+                loading="lazy"
+                class="overview__brand-image"
+                src="./media/images/brands/facebook.png"
                 alt="facebook"
               />
               <img
                 loading="lazy"
-                src="./images/brands/google.png"
+                class="overview__brand-image"
+                src="./media/images/brands/google.png"
                 alt="google"
               />
-              <img loading="lazy" src="./images/brands/cola.png" alt="cola" />
               <img
                 loading="lazy"
-                src="./images/brands/linkedin.png"
+                class="overview__brand-image"
+                src="./media/images/brands/cola.png"
+                alt="cola"
+              />
+              <img
+                loading="lazy"
+                class="overview__brand-image"
+                src="./media/images/brands/linkedin.png"
                 alt="linkedin"
               />
               <img
                 loading="lazy"
-                src="./images/brands/samsung.png"
+                class="overview__brand-image"
+                src="./media/images/brands/samsung.png"
                 alt="samsung"
               />
             </div>
           </div>
         </div>
-        <section>
+        <section class="section--calc-height">
           <div
-            class="container"
+            class="container container--flex"
             data-aos="flip-left"
             data-aos-duration="500"
             data-aos-delay="350"
             data-aos-offset="500"
           >
-            <div class="content">
-              <div class="content__info">
-                <div class="content__suptitle">alwalys online</div>
-                <h2 class="content__title">
-                  Real-time support<br />with cloud
-                </h2>
-                <div class="content__descr descr--marg">
-                  Tellus lacus morbi sagittis lacus in. Amet nisl at<br />mauris
-                  enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis
-                  ullamcorper eget ut.
-                </div>
-                <div class="content__more">
-                  <a href="#" class="more__link"
-                    >Learn more<img
-                      src="./icons/arrow-right.svg"
-                      alt="arrow-right"
-                      class="arrow__right"
-                  /></a>
-                </div>
+            <div class="block__info">
+              <p class="block__top-text">always online</p>
+              <h2 class="block__title block__title--v1">
+                Real-time support<br />with cloud
+              </h2>
+              <p class="block__text">
+                Tellus lacus morbi sagittis lacus in. Amet nisl at<br />mauris
+                enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis
+                ullamcorper eget ut.
+              </p>
+              <a class="block__link" href="#">Learn more</a>
+            </div>
+            <div class="block__image-wrapper">
+              <img
+                loading="lazy"
+                class="block__image"
+                src="./media/images/img-2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section class="section--calc-height">
+          <div class="container container--flex">
+            <div class="block__info">
+              <p class="block__top-text">free some cost</p>
+              <h2 class="block__title block__title--v1">
+                Save cost<br />for you and family
+              </h2>
+              <p class="block__text">
+                Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim
+                accumsan nisi, tincidunt vel. Enim<br />ipsum, amet quis
+                ullamcorper eget ut.
+              </p>
+              <a class="block__link" href="#">Learn more</a>
+            </div>
+            <div class="block__image-wrapper">
+              <img
+                loading="lazy"
+                class="block__image"
+                src="./media/images/img-3.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section class="section--calc-height">
+          <div class="container container--flex">
+            <div class="block__info">
+              <p class="block__top-text">Use anytime</p>
+              <h2 class="block__title block__title--v1">
+                Use anytime when you<br />need
+              </h2>
+              <p class="block__text">
+                Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim
+                accumsan nisi, tincidunt vel. Enim<br />ipsum, amet quis
+                ullamcorper eget ut.
+              </p>
+              <a class="block__link" href="#">Learn more</a>
+            </div>
+            <div class="block__image-wrapper">
+              <img
+                loading="lazy"
+                class="block__image"
+                src="./media/images/img-4.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section class="product">
+          <div class="container">
+            <div class="product__info">
+              <h2 class="block__title block__title--v1 product__title">
+                The Product we work with.
+              </h2>
+              <p class="block__text product__text">
+                Tellus lacus morbi sagittis lacus in.<br />Amet nisl at mauris
+                enim aumsan<br />nisi, tincidunt vel. Enim ipsum, at quis
+                ullamcorper eget ut.
+              </p>
+            </div>
+            <div class="product__item-group">
+              <div class="product__item">
+                <div class="product__item-icon"></div>
+                <h3 class="product__item-title">Cross platform</h3>
+                <p class="product__item-description">
+                  Elit esse cillum dolore eu fugiat nulla<br />pariatur
+                </p>
+                <a class="product__item-link" href="#"></a>
               </div>
-              <div class="content__image">
+              <div class="product__item">
+                <div class="product__item-icon"></div>
+                <h3 class="product__item-title">Cloud server</h3>
+                <p class="product__item-description">
+                  Elit esse cillum dolore eu fugiat nulla<br />pariatur
+                </p>
+                <a class="product__item-link" href="#"></a>
+              </div>
+              <div class="product__item">
+                <div class="product__item-icon"></div>
+                <h3 class="product__item-title">Pure Javascript</h3>
+                <p class="product__item-description">
+                  Elit esse cillum dolore eu fugiat nulla<br />pariatur
+                </p>
+                <a class="product__item-link" href="#"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="plans section--beige-background">
+          <div class="container">
+            <h2 class="block__title block__title--v2">
+              Choose your flexible plan.
+            </h2>
+            <div class="plans__card-group">
+              <div class="plans__card">
                 <img
                   loading="lazy"
-                  src="./images/image-2.svg"
+                  class="plans__card-icon"
+                  src="./media/icons/suitcase.svg"
                   alt=""
-                  class="pic"
+                />
+                <h3 class="plans__card-title">Starter plan</h3>
+                <ul class="plans__card-list">
+                  <li class="plans__card-item">Store unlimited data</li>
+                  <li class="plans__card-item">Export to pdf, xls, csv</li>
+                  <li class="plans__card-item">Cloud server support</li>
+                </ul>
+                <p class="plans__card-price">$9.99/<span>year</span></p>
+                <p class="plans__card-description">
+                  up to 3 user + 1.99 per user
+                </p>
+                <a class="plans__card-link" href="#">Get this</a>
+              </div>
+              <div class="plans__card">
+                <img
+                  loading="lazy"
+                  class="plans__card-icon"
+                  src="./media/icons/gift.svg"
+                  alt=""
+                />
+                <h3 class="plans__card-title">Sliver plan</h3>
+                <ul class="plans__card-list">
+                  <li class="plans__card-item">Store unlimited data</li>
+                  <li class="plans__card-item">Export to pdf, xls, csv</li>
+                  <li class="plans__card-item">Cloud server support</li>
+                </ul>
+                <p class="plans__card-price">$19.99/<span>year</span></p>
+                <p class="plans__card-description">
+                  up to 3 user + 1.99 per user
+                </p>
+                <a class="plans__card-link" href="#">Get this</a>
+              </div>
+              <div class="plans__card">
+                <img
+                  loading="lazy"
+                  class="plans__card-icon"
+                  src="./media/icons/membership.svg"
+                  alt=""
+                />
+                <h3 class="plans__card-title">Diamond plan</h3>
+                <ul class="plans__card-list">
+                  <li class="plans__card-item">Store unlimited data</li>
+                  <li class="plans__card-item">Export to pdf, xls, csv</li>
+                  <li class="plans__card-item">Cloud server support</li>
+                </ul>
+                <p class="plans__card-price">$29.99/<span>year</span></p>
+                <p class="plans__card-description">
+                  up to 3 user + 1.99 per user
+                </p>
+                <a class="plans__card-link" href="#">Get this</a>
+              </div>
+              <div class="plans__card">
+                <img
+                  loading="lazy"
+                  class="plans__card-icon"
+                  src="./media/icons/suitcase.svg"
+                  alt=""
+                />
+                <h3 class="plans__card-title">Lorem plan</h3>
+                <ul class="plans__card-list">
+                  <li class="plans__card-item">Store unlimited data</li>
+                  <li class="plans__card-item">Export to pdf, xls, csv</li>
+                  <li class="plans__card-item">Cloud server support</li>
+                </ul>
+                <p class="plans__card-price">$9.99/<span>year</span></p>
+                <p class="plans__card-description">
+                  up to 3 user + 1.99 per user
+                </p>
+                <a class="plans__card-link" href="#">Get this</a>
+              </div>
+              <div class="plans__card">
+                <img
+                  loading="lazy"
+                  class="plans__card-icon"
+                  src="./media/icons/suitcase.svg"
+                  alt=""
+                />
+                <h3 class="plans__card-title">Lorem plan</h3>
+                <ul class="plans__card-list">
+                  <li class="plans__card-item">Store unlimited data</li>
+                  <li class="plans__card-item">Export to pdf, xls, csv</li>
+                  <li class="plans__card-item">Cloud server support</li>
+                </ul>
+                <p class="plans__card-price">$9.99/<span>year</span></p>
+                <p class="plans__card-description">
+                  up to 3 user + 1.99 per user
+                </p>
+                <a class="plans__card-link" href="#">Get this</a>
+              </div>
+              <div class="plans__card">
+                <img
+                  loading="lazy"
+                  class="plans__card-icon"
+                  src="./media/icons/suitcase.svg"
+                  alt=""
+                />
+                <h3 class="plans__card-title">Lorem plan</h3>
+                <ul class="plans__card-list">
+                  <li class="plans__card-item">Store unlimited data</li>
+                  <li class="plans__card-item">Export to pdf, xls, csv</li>
+                  <li class="plans__card-item">Cloud server support.</li>
+                </ul>
+                <p class="plans__card-price">$9.99/<span>year</span></p>
+                <p class="plans__card-description">
+                  up to 3 user + 1.99 per user
+                </p>
+                <a class="plans__card-link" href="#">Get this</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="catalog">
+          <div class="container">
+            <h2 class="block__title block__title--v2">Shop by categories</h2>
+            <div class="catalog__collage">
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-3.webp"
+                  alt=""
+                />
+              </div>
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-4.webp"
+                  alt=""
+                />
+              </div>
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-5.webp"
+                  alt=""
+                />
+              </div>
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-6.webp"
+                  alt=""
+                />
+              </div>
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-7.webp"
+                  alt=""
+                />
+              </div>
+              <div class="catalog__image-wrapper">
+                <img
+                  loading="lazy"
+                  class="catalog__image"
+                  src="./media/images/collage/collage-img-8.webp"
+                  alt=""
                 />
               </div>
             </div>
           </div>
         </section>
-        <section>
+        <section class="support section--beige-background">
           <div class="container">
-            <div class="content">
-              <div class="content__image">
-                <img
-                  loading="lazy"
-                  src="./images/image-3.svg"
-                  alt=""
-                  class="pic"
-                />
+            <h2 class="block__title block__title--v2">
+              What can us do for you?
+            </h2>
+            <form class="support__form" action="#">
+              <div class="support__form-container">
+                <div class="support__field-group">
+                  <input
+                    class="support__field"
+                    id="first_name"
+                    type="text"
+                    name="first_name"
+                    autocomplete="given-name"
+                    placeholder="Your name*"
+                    required
+                  />
+                  <input
+                    class="support__field"
+                    id="email"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="Email*"
+                    required
+                  />
+                  <input
+                    class="support__field"
+                    id="contacting"
+                    type="text"
+                    name="contacting"
+                    placeholder="Reason for Contacting*"
+                    required
+                  />
+                  <input
+                    class="support__field"
+                    id="phone_number"
+                    type="tel"
+                    name="phone_number"
+                    placeholder="Phone"
+                  />
+                </div>
+                <textarea
+                  id="user_text"
+                  name="user_text"
+                  placeholder="Message"
+                ></textarea>
               </div>
-              <div class="content__info">
-                <div class="content__suptitle">free some cost</div>
-                <h2 class="content__title">
-                  Save cost<br />for you and family
-                </h2>
-                <div class="content__descr descr--marg">
-                  Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim
-                  accumsan nisi, tincidunt vel. Enim<br />ipsum, amet quis
-                  ullamcorper eget ut.
-                </div>
-                <div class="content__more">
-                  <a href="#" class="more__link"
-                    >Learn more<img
-                      src="./icons/arrow-right.svg"
-                      alt="arrow-right"
-                      class="arrow__right"
-                  /></a>
-                </div>
+              <p class="support__description">* indicates a required field</p>
+              <div class="support__check">
+                <input id="user_consent" type="checkbox" required />
+                <label class="support__check-label" for="user_consent">
+                  By sending us this message, you agree to our
+                  <a class="support__link" href="#">privacy policy</a>
+                </label>
               </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="container">
-            <div class="content">
-              <div class="content__info">
-                <div class="content__suptitle">Use anytime</div>
-                <h2 class="content__title">Use anytime when you<br />need</h2>
-                <div class="content__descr descr--marg">
-                  Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim
-                  accumsan nisi, tincidunt vel. Enim<br />ipsum, amet quis
-                  ullamcorper eget ut.
-                </div>
-                <div class="content__more">
-                  <a href="#" class="more__link"
-                    >Learn more<img
-                      src="./icons/arrow-right.svg"
-                      alt="arrow-right"
-                      class="arrow__right"
-                  /></a>
-                </div>
-              </div>
-              <div class="content__image">
-                <img
-                  loading="lazy"
-                  src="./images/image-4.svg"
-                  alt=""
-                  class="pic"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="container">
-            <div class="content content--column">
-              <div class="content__info content--row">
-                <h2 class="content__title title--not-marg">
-                  The Product we work with.
-                </h2>
-                <div class="content__descr descr--not-marg">
-                  Tellus lacus morbi sagittis lacus in.<br />Amet nisl at mauris
-                  enim aumsan<br />nisi, tincidunt vel. Enim ipsum, at quis
-                  ullamcorper eget ut.
-                </div>
-              </div>
-              <div class="content__cards">
-                <div class="card">
-                  <div class="card__img1"></div>
-                  <h3 class="card__title">Cross platform</h3>
-                  <div class="card__descr">
-                    Elit esse cillum dolore eu fugiat<br />nulla pariatur
-                  </div>
-                  <a class="card__arrow" href="#"></a>
-                </div>
-                <div class="card">
-                  <div class="card__img2"></div>
-                  <h3 class="card__title">Cloud server</h3>
-                  <div class="card__descr">
-                    Elit esse cillum dolore eu fugiat<br />nulla pariatur
-                  </div>
-                  <a class="card__arrow" href="#"></a>
-                </div>
-                <div class="card">
-                  <div class="card__img3"></div>
-                  <h3 class="card__title">Pure Javascript</h3>
-                  <div class="card__descr">
-                    Elit esse cillum dolore eu fugiat<br />nulla pariatur
-                  </div>
-                  <a class="card__arrow" href="#"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section--color-beige">
-          <div class="container">
-            <div class="content">
-              <div class="content__plans">
-                <h2 class="center__title">Choose your flexible plan.</h2>
-                <div class="plans__prices">
-                  <div class="item_w">
-                    <div class="plan__card">
-                      <img
-                        loading="lazy"
-                        src="./icons/suitcase.svg"
-                        alt=""
-                        class="plan__icon"
-                      />
-                      <h3 class="plan__card_title">Starter Plan</h3>
-                      <ul class="plan__card_list">
-                        <li class="plan__card_item">Store unlimited data</li>
-                        <li class="plan__card_item">Export to pdf, xls, csv</li>
-                        <li class="plan__card_item">Cloud server support</li>
-                      </ul>
-                      <div class="plan__price">
-                        $9.99/<span class="year">year</span>
-                      </div>
-                      <div class="price__subtitle">
-                        up to 3 user + 1.99 per user
-                      </div>
-                      <a class="btn__get" href="#">
-                        Get this <span class="btn__arrow"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="item_w">
-                    <div class="plan__card">
-                      <img
-                        loading="lazy"
-                        src="./icons/gift-card.svg"
-                        alt=""
-                        class="plan__icon"
-                      />
-                      <h3 class="plan__card_title">Sliver Plan</h3>
-                      <ul class="plan__card_list">
-                        <li class="plan__card_item">Store unlimited data</li>
-                        <li class="plan__card_item">Export to pdf, xls, csv</li>
-                        <li class="plan__card_item">Cloud server support</li>
-                      </ul>
-                      <div class="plan__price">
-                        $19.99/<span class="year">year</span>
-                      </div>
-                      <div class="price__subtitle">
-                        up to 3 user + 1.99 per user
-                      </div>
-                      <a class="btn__get" href="#">
-                        Get this <span class="btn__arrow"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="item_w">
-                    <div class="plan__card">
-                      <img
-                        loading="lazy"
-                        src="./icons/save-card.svg"
-                        alt=""
-                        class="plan__icon"
-                      />
-                      <h3 class="plan__card_title">Diamond Plan</h3>
-                      <ul class="plan__card_list">
-                        <li class="plan__card_item">Store unlimited data</li>
-                        <li class="plan__card_item">Export to pdf, xls, csv</li>
-                        <li class="plan__card_item">Cloud server support</li>
-                      </ul>
-                      <div class="plan__price">
-                        $29.99/<span class="year">year</span>
-                      </div>
-                      <div class="price__subtitle">
-                        up to 3 user + 1.99 per user
-                      </div>
-                      <a class="btn__get" href="#">
-                        Get this <span class="btn__arrow"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="item_w">
-                    <div class="plan__card">
-                      <img
-                        loading="lazy"
-                        src="./icons/suitcase.svg"
-                        alt=""
-                        class="plan__icon"
-                      />
-                      <h3 class="plan__card_title">Lorem Plan</h3>
-                      <ul class="plan__card_list">
-                        <li class="plan__card_item">Store unlimited data</li>
-                        <li class="plan__card_item">Export to pdf, xls, csv</li>
-                        <li class="plan__card_item">Cloud server support</li>
-                      </ul>
-                      <div class="plan__price">
-                        $9.99/<span class="year">year</span>
-                      </div>
-                      <div class="price__subtitle">
-                        up to 3 user + 1.99 per user
-                      </div>
-                      <a class="btn__get" href="#">
-                        Get this <span class="btn__arrow"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="item_w">
-                    <div class="plan__card">
-                      <img
-                        loading="lazy"
-                        src="./icons/suitcase.svg"
-                        alt=""
-                        class="plan__icon"
-                      />
-                      <h3 class="plan__card_title">Lorem Plan</h3>
-                      <ul class="plan__card_list">
-                        <li class="plan__card_item">Store unlimited data</li>
-                        <li class="plan__card_item">Export to pdf, xls, csv</li>
-                        <li class="plan__card_item">Cloud server support</li>
-                      </ul>
-                      <div class="plan__price">
-                        $9.99/<span class="year">year</span>
-                      </div>
-                      <div class="price__subtitle">
-                        up to 3 user + 1.99 per user
-                      </div>
-                      <a class="btn__get" href="#">
-                        Get this <span class="btn__arrow"></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="item_w">
-                    <div class="plan__card">
-                      <img
-                        loading="lazy"
-                        src="./icons/suitcase.svg"
-                        alt=""
-                        class="plan__icon"
-                      />
-                      <h3 class="plan__card_title">Lorem Plan</h3>
-                      <ul class="plan__card_list">
-                        <li class="plan__card_item">Store unlimited data</li>
-                        <li class="plan__card_item">Export to pdf, xls, csv</li>
-                        <li class="plan__card_item">Cloud server support.</li>
-                      </ul>
-                      <div class="plan__price">
-                        $9.99/<span class="year">year</span>
-                      </div>
-                      <div class="price__subtitle">
-                        up to 3 user + 1.99 per user
-                      </div>
-                      <a class="btn__get" href="#">
-                        Get this <span class="btn__arrow"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section--collage">
-          <div class="container">
-            <div class="content">
-              <div class="content__shop">
-                <h2 class="center__title">Shop by categories</h2>
-                <div class="shop__collage">
-                  <div class="image__cllg_1">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/1.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                  <div class="image__cllg_2">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/2.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                  <div class="image__cllg_3">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/3.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                  <div class="image__cllg_4">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/4.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                  <div class="image__cllg_5">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/5.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                  <div class="image__cllg_6">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/6.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                  <div class="image__cllg_7">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/7.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                  <div class="image__cllg_8">
-                    <img
-                      loading="lazy"
-                      src="./images/collage/8.webp"
-                      alt=""
-                      class="cllg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section--color-beige">
-          <div class="container">
-            <div class="content content--column">
-              <h2 class="center__title">What can us do for you?</h2>
-              <form class="form" action="#">
-                <div class="form__content">
-                  <div class="form__group">
-                    <input
-                      class="form__input"
-                      type="text"
-                      name="first_name"
-                      autocomplete="given-name"
-                      placeholder="Your name*"
-                      required
-                    />
-                    <input
-                      class="form__input"
-                      type="email"
-                      name="email"
-                      autocomplete="email"
-                      placeholder="Email*"
-                      required
-                    />
-                    <input
-                      class="form__input"
-                      type="text"
-                      name="contacting"
-                      placeholder="Reason for Contacting*"
-                      required
-                    />
-                    <input
-                      class="form__input"
-                      type="tel"
-                      name="phone_number"
-                      placeholder="Phone"
-                    />
-                  </div>
-                  <textarea
-                    name="txt"
-                    id="user__text"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <span class="indicate">* indicates a required field</span>
-                <span class="check">
-                  <input type="checkbox" id="policy" required /><label
-                    class="label__policy"
-                    for="policy"
-                    >By sending us this message, you agree to our
-                    <a class="link__policy" href="#">privacy policy</a></label
-                  >
-                </span>
-                <button class="form__btn__submit" type="submit">Submit</button>
-              </form>
-            </div>
+              <button class="support__submit-button" type="submit">
+                Submit
+              </button>
+            </form>
           </div>
         </section>
       </main>
       <footer>
-        <div class="footer__top__container container">
-          <a href="#" class="xpense__link"
-            ><img src="./images/logo.svg" alt="Xpense" class="xpense__logo"
-          /></a>
+        <div class="container footer__top-container">
+          <a class="xpense-link" href="#">
+            <img
+              class="xpense-logo"
+              src="./media/images/logo.svg"
+              alt="Xpense"
+            />
+          </a>
           <nav class="footer__nav">
             <h2 class="footer__title">links</h2>
-            <ul class="footer__nav__list">
-              <li class="footer__nav__item">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Home</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">About us</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Careers</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Pricing</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Features</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Blog</a>
               </li>
             </ul>
           </nav>
           <nav class="footer__nav">
             <h2 class="footer__title">legal</h2>
-            <ul class="footer__nav__list">
-              <li class="footer__nav__item">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Terms of use</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Terms of conditions</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Privecy policy</a>
               </li>
-              <li class="footer__nav__item">
+              <li class="footer__nav-item">
                 <a class="footer__link" href="#">Cookie policy</a>
               </li>
             </ul>
           </nav>
           <form class="footer__form" action="#">
             <h2 class="footer__title">newsletter</h2>
-            <p class="footer__form__text">Over 25000 people have subscribed</p>
-            <div class="footer__input__wrapper">
+            <p class="footer__form-text">Over 25000 people have subscribed</p>
+            <div class="footer__form-container">
               <input
-                class="footer__form__input"
+                class="footer__form-field"
+                id="email_subscription"
                 type="email"
-                name="email"
+                name="email_subscription"
                 autocomplete="email"
                 placeholder="Enter your email"
                 required
               />
-              <button class="footer__submit__button" type="submit">
+              <button class="footer__submit-button" type="submit">
                 Subscribe
               </button>
             </div>
-            <p class="footer__form__description">
+            <p class="footer__form-description">
               We don't sell your email and spam
             </p>
           </form>
         </div>
-        <div class="footer__bottom__container container">
-          <span class="footer__resources">
-            <a class="footer__info__link" href="#">Privacy & Terms</a>
-            <a class="footer__info__link" href="#">Contact Us</a>
-          </span>
+        <div class="container footer__bottom-container">
+          <div class="footer__resources">
+            <a class="footer__info-link" href="#">Privacy & Terms</a>
+            <a class="footer__info-link" href="#">Contact Us</a>
+          </div>
           <p class="footer__copyright">Copyright © 2025 Xpense</p>
-          <span class="footer__social__media">
-            <a class="footer__social__link" href="https://www.facebook.com/">
-            </a>
-            <a class="footer__social__link" href="https://x.com/"></a>
-            <a
-              class="footer__social__link"
-              href="https://www.linkedin.com/"
-            ></a>
-          </span>
+          <div class="footer__social-media">
+            <a class="footer__social-link" href="https://www.facebook.com/"></a>
+            <a class="footer__social-link" href="https://x.com/"></a>
+            <a class="footer__social-link" href="https://www.linkedin.com/"></a>
+          </div>
         </div>
       </footer>
     </div>
-    <dialog class="popup_demo">
+    <dialog class="popup">
       <div class="popup__container">
-        <div class="popup__top__panel">
+        <div class="popup__top-panel">
           <h2 class="popup__title">Demo lorem</h2>
-          <button class="popup__close__button"></button>
+          <button class="popup__close-button"></button>
         </div>
         <p class="popup__text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit

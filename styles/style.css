@@ -4,6 +4,11 @@
 
 @import url(base.css);
 @import url(header.css);
+@import url(hero.css);
+@import url(overview.css);
+@import url(product.css);
+@import url(plans.css);
+@import url(catalog.css);
+@import url(support.css);
 @import url(footer.css);
 @import url(popup.css);
-@import url(responsive.css);

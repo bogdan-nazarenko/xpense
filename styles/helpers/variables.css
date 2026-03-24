@@ -1,7 +1,13 @@
 :root {
-  --color-accent: #ff7235;
-  --color-basic: #292830;
-  --color-lighter: #bdbdbd;
-  --color-contrast: #fff;
-  --color-beige: #fffaf8;
+  --main-color: #ff7235;
+  --dark-color: #292830;
+  --light-color1: #bdbdbd;
+  --light-color2: #fff;
+  --beige-color: #fffaf8;
+
+  --duration: 0.3s;
+
+  --section-padd1: 160px 0;
+  --section-padd2: 80px 0;
+  --section-padd3: 40px 0;
 }
