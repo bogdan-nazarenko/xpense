@@ -1,0 +1,79 @@
+.feature {
+  border-radius: 12px;
+  padding: 64px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.feature:hover {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.04);
+}
+
+.feature__icon {
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+.feature__icon.feature__icon--device {
+  background-image: url(../media/icons/device.svg);
+  background-color: #ffbd740d;
+}
+
+.feature__icon.feature__icon--cloud {
+  background-image: url(../media/icons/cloud.svg);
+  background-color: #e2598b0d;
+}
+
+.feature__icon.feature__icon--backpack {
+  background-image: url(../media/icons/backpack.svg);
+  background-color: #4d12ee0d;
+}
+
+.feature__title {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+
+.feature__description {
+  margin-bottom: 26px;
+  color: var(--text-color2);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.feature__link {
+  display: block;
+  mask-image: url(../media/icons/arrow-2.svg);
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: var(--background1);
+  width: 24px;
+  height: 24px;
+}
+
+.feature__link:hover {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 1023px) {
+  .feature {
+    width: initial;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature {
+    padding: 40px;
+    width: 100%;
+  }
+}

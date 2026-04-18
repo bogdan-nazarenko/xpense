@@ -1,0 +1,84 @@
+.hero__container {
+  position: relative;
+}
+
+.hero__container::before,
+.hero__container::after {
+  position: absolute;
+  left: -37px;
+  z-index: -1;
+  background-image: url(../media/images/ellipse.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 84px;
+  content: "";
+}
+
+.hero__container::before {
+  top: -43px;
+}
+
+.hero__container::after {
+  bottom: -52px;
+  rotate: -90deg;
+}
+
+.hero__title {
+  white-space: nowrap;
+}
+
+.hero__text {
+  margin-bottom: 38px;
+}
+
+.hero__demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero__button {
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  padding: 17px 23.5px;
+  color: var(--text-color3);
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.hero__button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.hero__description {
+  margin-bottom: initial;
+}
+
+@media (max-width: 1023px) {
+  .hero__container::before,
+  .hero__container::after {
+    display: none;
+  }
+
+  .hero__text {
+    margin-bottom: 23px;
+  }
+
+  .hero__button {
+    padding: 12px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__title {
+    white-space: wrap;
+    overflow-wrap: anywhere;
+  }
+}
