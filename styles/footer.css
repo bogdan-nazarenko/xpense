@@ -1,24 +1,24 @@
-.footer__top__container,
-.footer__bottom__container {
+.footer__top-container,
+.footer__bottom-container {
   display: flex;
   justify-content: space-between;
 }
 
-.footer__top__container {
+.footer__top-container {
   border-bottom: 1px solid rgba(189, 189, 189, 0.2);
   padding-top: 107px;
   padding-bottom: 40px;
 }
 
 .footer__title {
-  margin-bottom: 24px;
+  margin-bottom: 38px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.footer__nav__list {
+.footer__list {
   display: flex;
-  row-gap: 8px;
+  row-gap: 13px;
   flex-direction: column;
 }
 
@@ -28,55 +28,56 @@
 }
 
 .footer__link:hover {
-  color: var(--color-accent);
+  color: var(--primary-color);
 }
 
 .footer__link,
-.footer__info__link {
+.footer__info-link {
   color: inherit;
   text-decoration: none;
 }
 
-.footer__form__text {
-  margin-bottom: 18px;
-  color: var(--color-lighter);
+.footer__text {
+  margin-bottom: 24px;
+  color: var(--text-color2);
   font-size: 20px;
 }
 
-.footer__input__wrapper {
+.footer__subscription {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  border: 1px solid var(--color-basic);
+  margin-bottom: 13px;
+  border: 1px solid var(--border-color1);
   border-radius: 8px;
   max-width: 350px;
   height: 62px;
 }
 
-.footer__form__input {
+.footer__field {
   padding: 0 22px;
   width: 100%;
   height: 100%;
   font-weight: inherit;
   font-size: 18px;
   font-family: inherit;
+  text-overflow: ellipsis;
 }
 
-.footer__form__input::placeholder {
-  color: var(--color-basic);
+.footer__field::placeholder {
+  color: var(--text-color1);
 }
 
-.footer__submit__button {
+.footer__submit-button {
   margin-right: 5px;
   padding: 10px 15.5px;
 }
 
-.footer__form__description {
-  color: var(--color-lighter);
+.footer__description {
+  color: var(--text-color2);
   font-size: 14px;
 }
 
-.footer__bottom__container {
+.footer__bottom-container {
   padding-top: 20px;
   padding-bottom: 114px;
 }
@@ -86,41 +87,94 @@
   column-gap: 24px;
 }
 
-.footer__info__link,
+.footer__info-link,
 .footer__copyright {
   font-size: 14px;
 }
 
-.footer__info__link:hover {
+.footer__info-link:hover {
   text-decoration: underline;
 }
 
-.footer__social__media {
+.footer__social-media {
   display: flex;
   column-gap: 12px;
 }
 
-.footer__social__link {
+.footer__social-link {
   display: inline-block;
   mask-position: center;
   mask-size: contain;
   mask-repeat: no-repeat;
-  background-color: currentColor;
+  background-color: var(--background1);
   width: 20px;
   height: 20px;
-  color: currentColor;
 }
 
-.footer__social__link:hover {
-  color: var(--color-accent);
+.footer__social-link:hover {
+  background-color: var(--primary-color);
 }
 
-.footer__social__link:nth-child(1) {
-  mask-image: url(../icons/facebook-square.svg);
+.footer__social-link:nth-child(1) {
+  mask-image: url(../media/icons/facebook-square.svg);
 }
-.footer__social__link:nth-child(2) {
-  mask-image: url(../icons/twitter-square.svg);
+
+.footer__social-link:nth-child(2) {
+  mask-image: url(../media/icons/twitter-square.svg);
 }
-.footer__social__link:nth-child(3) {
-  mask-image: url(../icons/linkedin-square.svg);
+
+.footer__social-link:nth-child(3) {
+  mask-image: url(../media/icons/linkedin-square.svg);
+}
+
+@media (max-width: 1023px) {
+  .footer__top-container {
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 40px;
+  }
+
+  .footer__form {
+    margin: 0 auto;
+  }
+
+  .footer__bottom-container {
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__top-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__title,
+  .footer__item,
+  .footer__description {
+    text-align: center;
+  }
+
+  .footer__subscription {
+    row-gap: 25px;
+    flex-direction: column;
+    margin-bottom: 25px;
+    border: initial;
+    border-radius: initial;
+    height: initial;
+  }
+
+  .footer__field {
+    border: 1px solid var(--border-color1);
+    border-radius: 8px;
+    padding: 0 10px;
+    height: 50px;
+  }
+
+  .footer__submit-button {
+    margin-right: initial;
+  }
 }
