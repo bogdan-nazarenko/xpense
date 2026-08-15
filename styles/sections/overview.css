@@ -1,0 +1,37 @@
+.overview {
+  overflow: hidden;
+}
+
+.overview__container {
+  background-image: url(../../media/images/background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--main-color);
+  padding-top: 87px;
+}
+
+.overview__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.overview__brand-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 108px;
+  background-color: var(--white-color);
+  padding: 82px 0 66px;
+}
+
+@media (width < 768px) {
+  .overview__container {
+    padding-top: 40px;
+  }
+
+  .overview__brand-group {
+    padding: 40px 20px;
+  }
+}

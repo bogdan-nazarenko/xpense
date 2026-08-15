@@ -1,0 +1,12 @@
+.home-link {
+  display: block;
+  width: 100%;
+  max-width: 112px;
+  height: 40px;
+}
+
+@media (pointer: coarse) {
+  .home-link:active {
+    background-color: var(--translucent-main-color);
+  }
+}

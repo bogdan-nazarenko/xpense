@@ -1,0 +1,65 @@
+.hero {
+  --section-padding: 158px 0;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__container::before,
+.hero__container::after {
+  position: absolute;
+  left: -37px;
+  z-index: -1;
+  background-image: url(../../media/images/ellipse.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 84px;
+  content: "";
+}
+
+.hero__container::before {
+  top: -42px;
+}
+
+.hero__container::after {
+  bottom: -52px;
+  rotate: -90deg;
+}
+
+.hero__title {
+  margin-bottom: 19px;
+}
+
+.hero__text {
+  margin-bottom: 38px;
+}
+
+.hero__demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero__button {
+  padding: 24px;
+  font-size: inherit;
+}
+
+@media (width < 1024px) {
+  .hero__container::before,
+  .hero__container::after {
+    content: none;
+  }
+
+  .hero__text {
+    margin-bottom: var(--text-bottom-margin);
+  }
+
+  .hero__button {
+    padding: 12px;
+  }
+}

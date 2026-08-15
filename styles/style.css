@@ -1,9 +1,26 @@
-@import url(./helpers/reset.css);
-@import url(./helpers/variables.css);
-@import url(fonts.css);
+@import "base/reset.css";
+@import "base/variables.css";
+@import "base/fonts.css";
+@import "base/base.css";
+@import "base/typography.css";
 
-@import url(base.css);
-@import url(header.css);
-@import url(footer.css);
-@import url(popup.css);
-@import url(responsive.css);
+@import "components/home-link.css";
+@import "components/media.css";
+@import "components/links.css";
+@import "components/buttons.css";
+@import "components/features.css";
+@import "components/price-card.css";
+@import "components/modal.css";
+
+@import "layout/grid.css";
+
+@import "layout/header.css";
+
+@import "sections/hero.css";
+@import "sections/overview.css";
+@import "sections/product.css";
+@import "sections/pricing.css";
+@import "sections/catalog.css";
+@import "sections/support.css";
+
+@import "layout/footer.css";
