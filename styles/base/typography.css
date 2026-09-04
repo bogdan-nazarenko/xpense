@@ -1,0 +1,50 @@
+.superscription {
+  display: block;
+  margin-bottom: 32px;
+  width: fit-content;
+  color: var(--light-color);
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.primary-title {
+  margin-bottom: 23px;
+  font-size: 96px;
+}
+
+.secondary-title {
+  margin-bottom: 80px;
+  font-size: 72px;
+  text-align: center;
+}
+
+.text {
+  --text-bottom-margin: 23px;
+
+  color: var(--light-color);
+  line-height: 1.65;
+}
+
+.text:where(:has(+ *)) {
+  margin-bottom: var(--text-bottom-margin);
+}
+
+@media (width < 1024px) {
+  .superscription {
+    font-size: inherit;
+  }
+
+  .primary-title {
+    font-size: 52px;
+  }
+}
+
+@media (width < 768px) {
+  .primary-title {
+    overflow-wrap: anywhere;
+  }
+
+  .secondary-title {
+    margin-bottom: 40px;
+  }
+}
