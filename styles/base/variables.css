@@ -1,0 +1,11 @@
+:root {
+  --main-color: #ff7235;
+  --translucent-main-color: #ff72359f;
+  --dark-color: #292830;
+  --light-color: #bdbdbd;
+  --white-color: white;
+  --beige-color: #fffaf8;
+
+  --shadow: 0 0 50px 0 rgba(0, 0, 0, 0.04);
+  --duration: 0.3s;
+}
