@@ -1,0 +1,120 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--white-color);
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__home-link {
+  z-index: 1;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.header__nav-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__button {
+  padding: 14px 17px;
+  font-size: inherit;
+}
+
+.header__menu-button {
+  display: none;
+}
+
+.header__menu-button[aria-expanded="true"] {
+  transform: rotate(180deg);
+}
+
+.header__menu-button::before {
+  display: inherit;
+  mask-image: url(../../media/icons/menu-icon.svg);
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: var(--main-color);
+  width: 48px;
+  height: 48px;
+  content: "";
+}
+
+.header__menu-button[aria-expanded="true"]::before {
+  background-color: var(--dark-color);
+}
+
+@media (width < 768px) {
+  .header__container {
+    justify-content: space-between;
+    transition: var(--duration);
+  }
+
+  .header__container:has(.header__nav_open) {
+    padding-top: 20px;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100dvw;
+    visibility: hidden;
+    transition:
+      left var(--duration),
+      visibility var(--duration);
+    background-color: var(--beige-color);
+    width: 100dvw;
+    height: 100dvh;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .header__nav_open {
+    left: 0;
+    visibility: visible;
+  }
+
+  .header__nav-inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 68px;
+    height: 100%;
+    min-height: 640px;
+  }
+
+  .header__list {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .header__list-item:not(:last-child) {
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 30px;
+  }
+
+  .header__menu-button {
+    display: block;
+    transition: var(--duration);
+  }
+}

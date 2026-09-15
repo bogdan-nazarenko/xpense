@@ -1,0 +1,47 @@
+.link_arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--main-color);
+}
+
+.link_arrow::after {
+  mask-image: url(../../media/icons/arrow-1.svg);
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: currentColor;
+  width: 24px;
+  height: 24px;
+  content: "";
+}
+
+@media (hover: hover) {
+  .link:hover {
+    color: var(--main-color);
+  }
+
+  .link_arrow:hover {
+    color: var(--dark-color);
+  }
+}
+
+@media (pointer: coarse) {
+  .link:active {
+    color: var(--main-color);
+  }
+
+  .link_arrow:active {
+    color: var(--dark-color);
+  }
+}
+
+@media (width < 1024px) {
+  .link_arrow {
+    gap: 6px;
+  }
+
+  .link_arrow::after {
+    mask-size: 18px;
+  }
+}
