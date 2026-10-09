@@ -1,0 +1,47 @@
+html {
+  min-width: 300px;
+  scroll-behavior: smooth;
+  color: var(--dark-color);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+input {
+  text-overflow: ellipsis;
+}
+
+input:where([type="checkbox"]) {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--main-color);
+}
+
+::placeholder {
+  color: var(--light-color);
+}
+
+::selection {
+  background-color: var(--translucent-main-color);
+  color: var(--white-color);
+}
+
+@media (width < 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
